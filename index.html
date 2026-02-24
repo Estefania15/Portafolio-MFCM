@@ -6,7 +6,7 @@
     <title>CV | María Fernanda Cruz Muñoz - Licenciada en Derecho</title>
     
     <!-- Ícono de la pestaña (Favicon) -->
-    <link rel="icon" type="image/jpeg" href="Mafer2 2.jpg.jpeg">
+    <link rel="icon" type="image/jpeg" href="Favicon.png">
     
     <!-- Tailwind CSS para diseño y responsividad -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,10 +27,10 @@
                             300: '#93c5fd',
                             400: '#60a5fa',
                             500: '#3b82f6',
-                            600: '#2563eb', // Acento principal
+                            600: '#2563eb', // Azul original conservado para línea de tiempo
                             700: '#1d4ed8',
                             800: '#1e40af',
-                            900: '#0f172a', // Fondo principal
+                            900: '#0f172a',
                         }
                     },
                     fontFamily: {
@@ -68,57 +68,55 @@
             .no-print { display: none !important; }
             .print-break-inside-avoid { page-break-inside: avoid; }
             main, .grid { grid-template-columns: 1fr !important; display: block !important; padding: 0 !important; margin-top: 20px !important;}
-            /* Eliminar sombras y hover effects en impresión */
-            .shadow-sm, .hover\:shadow-md, .hover\:-translate-y-1, .group:hover, .hover\:border-brand-400, .hover\:shadow-\[0_0_15px_rgba\(59\,130\,246\,0\.15\)\] { box-shadow: none !important; transform: none !important; border: 1px solid #e2e8f0 !important; }
-            header { padding: 20px !important; color: black !important; background-color: #f8fafc !important; border-bottom: 2px solid #2563eb;}
+            .shadow-sm, .hover\:shadow-md, .hover\:-translate-y-1, .group:hover, .hover\:border-slate-400, .hover\:shadow-\[0_0_15px_rgba\(100\,116\,139\,0\.15\)\] { box-shadow: none !important; transform: none !important; border: 1px solid #e2e8f0 !important; }
+            header { padding: 20px !important; color: black !important; background-color: #f8fafc !important; border-bottom: 2px solid #334155;}
             header h1 { color: #0f172a !important; }
-            header h2 { color: #2563eb !important; }
+            header h2 { color: #475569 !important; }
             header i { color: #475569 !important; }
             .text-white { color: #0f172a !important; }
-            /* Ajustes para la línea de tiempo en impresión */
             .border-l-2 { border-color: #e2e8f0 !important; }
             .timeline-dot { display: none !important; }
             .skill-tag { border: 1px solid #cbd5e1 !important; background: transparent !important; color: #475569 !important; }
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900 overflow-x-hidden">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-slate-300 selection:text-slate-900 overflow-x-hidden">
 
-    <!-- CABECERA CON FOTO -->
-    <header class="bg-brand-900 text-white py-12 shadow-lg print-break-inside-avoid relative overflow-hidden">
-        <!-- Detalle de fondo sutil para la cabecera -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-600 rounded-full opacity-10 blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-400 rounded-full opacity-5 blur-3xl -ml-20 -mb-20 pointer-events-none"></div>
+    <!-- CABECERA CON FOTO (Tema Negro/Gris) -->
+    <header class="bg-slate-900 text-white py-12 shadow-lg print-break-inside-avoid relative overflow-hidden">
+        <!-- Detalle de fondo sutil para la cabecera en tonos grises -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-slate-700 rounded-full opacity-20 blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-slate-600 rounded-full opacity-10 blur-3xl -ml-20 -mb-20 pointer-events-none"></div>
 
         <div class="max-w-6xl mx-auto px-4 md:px-6 opacity-0-init animate-fade-in-up relative z-10">
             <!-- Utilizamos el mismo Grid que el contenido principal para alinear la foto a la perfección -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 
-                <!-- DATOS (Columna principal, alineada con la sangría de las tarjetas de la izquierda usando md:pl-8) -->
+                <!-- DATOS -->
                 <div class="lg:col-span-2 text-center lg:text-left order-2 lg:order-1 flex flex-col items-center lg:items-start md:pl-8">
                     <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-2">María Fernanda Cruz Muñoz</h1>
-                    <h2 class="text-xl md:text-2xl text-blue-400 font-medium tracking-wide">Licenciada en Derecho</h2>
+                    <h2 class="text-xl md:text-2xl text-slate-400 font-medium tracking-wide">Licenciada en Derecho</h2>
                     
                     <div class="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-3 mt-6 text-sm md:text-base text-slate-300">
                         <a href="tel:+525543573166" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
-                            <i class="fas fa-phone text-brand-400"></i> +52 55 43573166
+                            <i class="fas fa-phone text-slate-400"></i> +52 55 43573166
                         </a>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fercruzm15@gmail.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
-                            <i class="fas fa-envelope text-brand-400"></i> fercruzm15@gmail.com
+                            <i class="fas fa-envelope text-slate-400"></i> fercruzm15@gmail.com
                         </a>
                         <a href="https://www.linkedin.com/in/mar%C3%ADa-fernanda-cruz-mu%C3%B1oz-3a2473292?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmyYe1gTjTn%2B3GR4IghBKCA%3D%3D" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
-                            <i class="fab fa-linkedin text-brand-400"></i> Linkedin
+                            <i class="fab fa-linkedin text-slate-400"></i> Linkedin
                         </a>
                     </div>
                 </div>
 
-                <!-- FOTO (Columna secundaria, alineada con la sangría de las tarjetas de la derecha usando md:pl-6) -->
+                <!-- FOTO -->
                 <div class="lg:col-span-1 flex justify-center lg:justify-start md:pl-6 order-1 lg:order-2">
                     <div class="shrink-0 relative group">
-                        <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-slate-700 bg-slate-800 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.3)] flex items-center justify-center transition-all duration-500 group-hover:border-brand-500 group-hover:shadow-[0_0_25px_rgba(37,99,235,0.4)] group-hover:scale-105">
-                            <img src="Mafer2 2.jpg.jpeg" alt="María Fernanda Cruz Muñoz" class="w-full h-full object-cover object-[50%_15%]">
+                        <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-slate-700 bg-slate-800 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.3)] flex items-center justify-center transition-all duration-500 group-hover:border-slate-500 group-hover:shadow-[0_0_25px_rgba(71,85,105,0.4)] group-hover:scale-105">
+                            <img src="MFCM.jpeg" alt="María Fernanda Cruz Muñoz" class="w-full h-full object-cover object-[50%_15%]">
                         </div>
-                        <div class="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-6 h-6 md:w-7 md:h-7 bg-green-500 border-4 border-brand-900 rounded-full no-print" title="Disponible"></div>
+                        <div class="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-6 h-6 md:w-7 md:h-7 bg-green-500 border-4 border-slate-900 rounded-full no-print" title="Disponible"></div>
                     </div>
                 </div>
 
@@ -130,11 +128,11 @@
     <main class="max-w-6xl mx-auto px-4 md:px-6 py-10 space-y-8">
         
         <!-- PERFIL PROFESIONAL -->
-        <section class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 hover:border-brand-400 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-300 print-break-inside-avoid relative overflow-hidden opacity-0-init animate-fade-in-up delay-100">
-            <div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-brand-400 to-brand-700"></div>
+        <section class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 hover:border-slate-400 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] transition-all duration-300 print-break-inside-avoid relative overflow-hidden opacity-0-init animate-fade-in-up delay-100">
+            <div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-slate-400 to-slate-700"></div>
             
             <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-                <i class="fas fa-user-circle text-brand-600"></i> Presentación Profesional
+                <i class="fas fa-user-circle text-slate-700"></i> Presentación Profesional
             </h3>
             <p class="text-slate-700 leading-relaxed text-sm md:text-base">
                 Soy Licenciada en Derecho por la UNAM con una profunda vocación por la justicia social, los derechos humanos y el análisis jurídico del Sistema Financiero Mexicano. A lo largo de mi trayectoria, incluyendo mi paso por la Comisión Nacional Bancaria y de Valores y el NADBank, he desarrollado sólidas habilidades en la prevención de delitos financieros, argumentación jurídica y finanzas sostenibles. Me distingo por mi compromiso ético, mi capacidad de investigación y mi firme creencia en que el Derecho es la herramienta fundamental para construir una sociedad más equitativa, transparente e incluyente.
@@ -148,9 +146,9 @@
             <div class="lg:col-span-2 space-y-8">
                 
                 <!-- Experiencia Profesional -->
-                <section class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 hover:border-brand-400 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-300 print-break-inside-avoid opacity-0-init animate-fade-in-up delay-200">
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 hover:border-slate-400 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] transition-all duration-300 print-break-inside-avoid opacity-0-init animate-fade-in-up delay-200">
                     <h3 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3 border-b pb-3">
-                        <i class="fas fa-briefcase text-brand-600 bg-brand-50 p-2 rounded-lg"></i> Experiencia Profesional
+                        <i class="fas fa-briefcase text-slate-700 bg-slate-100 p-2 rounded-lg"></i> Experiencia Profesional
                     </h3>
                     
                     <div class="space-y-10">
@@ -161,25 +159,25 @@
                                 <i class="fas fa-building text-slate-400 text-lg"></i> COMISIÓN NACIONAL BANCARIA Y DE VALORES
                             </h4>
                             
-                            <!-- Borde izquierdo que conecta los nodos -->
+                            <!-- Borde izquierdo (Línea de tiempo AZUL) -->
                             <div class="border-l-2 border-slate-200 pl-6 md:pl-8 relative space-y-8 ml-2 md:ml-4">
                                 
                                 <!-- Delitos y Sanciones -->
                                 <div class="relative group">
-                                    <!-- Nodo de la línea de tiempo -->
+                                    <!-- Nodo de la línea de tiempo AZUL -->
                                     <div class="timeline-dot absolute w-4 h-4 bg-brand-600 rounded-full -left-[33px] md:-left-[41px] top-1.5 ring-4 ring-white group-hover:scale-125 group-hover:shadow-[0_0_10px_rgba(37,99,235,0.5)] transition-all duration-300"></div>
                                     
-                                    <div class="bg-slate-50/50 p-5 rounded-xl border border-transparent group-hover:border-brand-200 group-hover:bg-white group-hover:shadow-[0_4px_20px_rgba(37,99,235,0.08)] transition-all duration-300">
-                                        <span class="inline-block text-xs font-bold tracking-wider text-brand-700 uppercase bg-brand-100/50 px-3 py-1 rounded-full mb-3 border border-brand-200">octubre 2024 - actualmente</span>
+                                    <div class="bg-slate-50/50 p-5 rounded-xl border border-transparent group-hover:border-slate-300 group-hover:bg-white group-hover:shadow-[0_4px_20px_rgba(100,116,139,0.08)] transition-all duration-300">
+                                        <span class="inline-block text-xs font-bold tracking-wider text-slate-700 uppercase bg-slate-200/50 px-3 py-1 rounded-full mb-3 border border-slate-300 group-hover:border-slate-400 transition-colors">octubre 2024 - actualmente</span>
                                         <h5 class="text-lg font-semibold text-slate-800">DIRECCIÓN GENERAL DE DELITOS Y SANCIONES</h5>
-                                        <p class="font-medium text-brand-600 text-sm mt-1 mb-4 flex items-center gap-2"><i class="fas fa-shield-alt"></i> Coordinación A de Delitos</p>
+                                        <p class="font-medium text-slate-600 text-sm mt-1 mb-4 flex items-center gap-2"><i class="fas fa-shield-alt text-slate-500"></i> Coordinación A de Delitos</p>
                                         
                                         <ul class="list-none space-y-2 text-slate-600 text-sm md:text-base">
-                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-brand-400 mt-1"></i><span>Resolución de casos respecto a Delitos Financieros previstos en las leyes: LIC, LMV, LRITF, LRASCAP, LFI, LACP, LUC, LGOAACLRAF, y demás leyes financieras.</span></li>
-                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-brand-400 mt-1"></i><span>Emisión de Opiniones de Delitos y Opiniones Técnicas a la SHCP y la FGR, para efectos de la denuncia o querella de delitos financieros.</span></li>
+                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 mt-1"></i><span>Resolución de casos respecto a Delitos Financieros previstos en las leyes: LIC, LMV, LRITF, LRASCAP, LFI, LACP, LUC, LGOAACLRAF, y demás leyes financieras.</span></li>
+                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 mt-1"></i><span>Emisión de Opiniones de Delitos y Opiniones Técnicas a la SHCP y la FGR, para efectos de la denuncia o querella de delitos financieros.</span></li>
                                         </ul>
 
-                                        <!-- Etiquetas de Habilidades -->
+                                        <!-- Etiquetas AZULES/COLOR -->
                                         <div class="mt-4 flex flex-wrap gap-2 no-print">
                                             <span class="skill-tag text-xs font-semibold bg-brand-50 border border-brand-200 text-brand-700 px-2.5 py-1 rounded-md shadow-sm hover:bg-brand-100 transition-colors"><i class="fas fa-tag text-brand-500 mr-1"></i> Derecho Financiero</span>
                                             <span class="skill-tag text-xs font-semibold bg-brand-50 border border-brand-200 text-brand-700 px-2.5 py-1 rounded-md shadow-sm hover:bg-brand-100 transition-colors"><i class="fas fa-tag text-brand-500 mr-1"></i> Compliance Penal</span>
@@ -192,36 +190,38 @@
 
                                 <!-- Servicio Social -->
                                 <div class="relative group">
+                                    <!-- Nodo AZUL en hover -->
                                     <div class="timeline-dot absolute w-4 h-4 bg-slate-300 rounded-full -left-[33px] md:-left-[41px] top-1.5 ring-4 ring-white group-hover:scale-125 group-hover:bg-brand-400 transition-all duration-300"></div>
                                     
-                                    <div class="bg-slate-50/50 p-5 rounded-xl border border-transparent group-hover:border-brand-200 group-hover:bg-white group-hover:shadow-[0_4px_20px_rgba(37,99,235,0.08)] transition-all duration-300">
-                                        <span class="inline-block text-xs font-bold tracking-wider text-slate-600 uppercase bg-slate-200/50 px-3 py-1 rounded-full mb-3 border border-slate-200 group-hover:border-brand-200 transition-colors">abril - octubre 2024 (finalizado)</span>
+                                    <div class="bg-slate-50/50 p-5 rounded-xl border border-transparent group-hover:border-slate-300 group-hover:bg-white group-hover:shadow-[0_4px_20px_rgba(100,116,139,0.08)] transition-all duration-300">
+                                        <span class="inline-block text-xs font-bold tracking-wider text-slate-600 uppercase bg-slate-200/50 px-3 py-1 rounded-full mb-3 border border-slate-300 group-hover:border-slate-400 transition-colors">abril - octubre 2024 (finalizado)</span>
                                         <h5 class="text-lg font-semibold text-slate-800">SERVICIO SOCIAL</h5>
                                         
                                         <div class="mt-4 space-y-4">
-                                            <div class="bg-white p-4 rounded-lg border border-slate-200 hover:border-brand-300 hover:shadow-[0_0_10px_rgba(37,99,235,0.1)] transition-all duration-300">
+                                            <div class="bg-white p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:shadow-[0_0_10px_rgba(100,116,139,0.1)] transition-all duration-300">
                                                 <p class="font-semibold text-slate-800 flex justify-between items-center flex-wrap gap-2">
                                                     Dirección Gral. Contenciosa de Procedimientos "C"
                                                     <span class="text-xs font-normal text-slate-500 bg-slate-50 px-2 py-1 rounded border">mayo-octubre 2024</span>
                                                 </p>
                                                 <ul class="list-none mt-3 space-y-2 text-slate-600 text-sm md:text-base">
-                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-green-500 transition-colors mt-1"></i><span>Análisis de demandas de amparo indirecto (emisoras, sociedades cooperativas, banca múltiple, sanciones).</span></li>
-                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-green-500 transition-colors mt-1"></i><span>Elaboración de informes justificados y previos. Aseguramientos y desbloqueo de cuentas.</span></li>
-                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-green-500 transition-colors mt-1"></i><span>Manejo avanzado de bases de datos para concentración de información jurídica.</span></li>
+                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-slate-500 transition-colors mt-1"></i><span>Análisis de demandas de amparo indirecto (emisoras, sociedades cooperativas, banca múltiple, sanciones).</span></li>
+                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-slate-500 transition-colors mt-1"></i><span>Elaboración de informes justificados y previos. Aseguramientos y desbloqueo de cuentas.</span></li>
+                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-slate-500 transition-colors mt-1"></i><span>Manejo avanzado de bases de datos para concentración de información jurídica.</span></li>
                                                 </ul>
                                             </div>
                                             
-                                            <div class="bg-white p-4 rounded-lg border border-slate-200 hover:border-brand-300 hover:shadow-[0_0_10px_rgba(37,99,235,0.1)] transition-all duration-300">
+                                            <div class="bg-white p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:shadow-[0_0_10px_rgba(100,116,139,0.1)] transition-all duration-300">
                                                 <p class="font-semibold text-slate-800 flex justify-between items-center flex-wrap gap-2">
                                                     Dirección Gral. Contenciosa de Procedimientos "A"
                                                     <span class="text-xs font-normal text-slate-500 bg-slate-50 px-2 py-1 rounded border">abril-mayo 2024</span>
                                                 </p>
                                                 <ul class="list-none mt-3 space-y-2 text-slate-600 text-sm md:text-base">
-                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-green-500 transition-colors mt-1"></i><span>Búsqueda de información en SIPRES, SIGER y FOCOOP.</span></li>
+                                                    <li class="flex items-start gap-2"><i class="fas fa-check text-slate-300 group-hover:text-slate-500 transition-colors mt-1"></i><span>Búsqueda de información en SIPRES, SIGER y FOCOOP.</span></li>
                                                 </ul>
                                             </div>
                                         </div>
 
+                                        <!-- Etiquetas COLOR -->
                                         <div class="mt-4 flex flex-wrap gap-2 no-print">
                                             <span class="skill-tag text-xs font-semibold bg-indigo-50 border border-indigo-200 text-indigo-700 px-2.5 py-1 rounded-md shadow-sm hover:bg-indigo-100 transition-colors"><i class="fas fa-tag text-indigo-500 mr-1"></i> Amparo Indirecto</span>
                                             <span class="skill-tag text-xs font-semibold bg-indigo-50 border border-indigo-200 text-indigo-700 px-2.5 py-1 rounded-md shadow-sm hover:bg-indigo-100 transition-colors"><i class="fas fa-tag text-indigo-500 mr-1"></i> Procesos Contenciosos</span>
@@ -239,19 +239,21 @@
                             
                             <div class="border-l-2 border-slate-200 pl-6 md:pl-8 relative ml-2 md:ml-4">
                                 <div class="relative group">
+                                    <!-- Nodo AZUL en hover -->
                                     <div class="timeline-dot absolute w-4 h-4 bg-slate-300 rounded-full -left-[33px] md:-left-[41px] top-1.5 ring-4 ring-white group-hover:scale-125 group-hover:bg-brand-400 transition-all duration-300"></div>
                                     
-                                    <div class="bg-slate-50/50 p-5 rounded-xl border border-transparent group-hover:border-brand-200 group-hover:bg-white group-hover:shadow-[0_4px_20px_rgba(37,99,235,0.08)] transition-all duration-300">
-                                        <span class="inline-block text-xs font-bold tracking-wider text-slate-600 uppercase bg-slate-200/50 px-3 py-1 rounded-full mb-3 border border-slate-200 group-hover:border-brand-200 transition-colors">junio - diciembre 2023</span>
+                                    <div class="bg-slate-50/50 p-5 rounded-xl border border-transparent group-hover:border-slate-300 group-hover:bg-white group-hover:shadow-[0_4px_20px_rgba(100,116,139,0.08)] transition-all duration-300">
+                                        <span class="inline-block text-xs font-bold tracking-wider text-slate-600 uppercase bg-slate-200/50 px-3 py-1 rounded-full mb-3 border border-slate-300 group-hover:border-slate-400 transition-colors">junio - diciembre 2023</span>
                                         <h5 class="text-lg font-semibold text-slate-800">Embajadora Universitaria 1era Generación</h5>
                                         <p class="text-sm text-amber-600 font-medium mt-1 mb-4 flex items-center gap-2"><i class="fas fa-star text-amber-500"></i> Embajadora sobresaliente</p>
                                         
                                         <ul class="list-none space-y-2 text-slate-600 text-sm md:text-base">
-                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 group-hover:text-brand-400 transition-colors mt-1"></i><span>Estudio de las Instituciones de Banca de Desarrollo y acercamiento administrativo.</span></li>
-                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 group-hover:text-brand-400 transition-colors mt-1"></i><span>Organización de conferencias: Nearshoring, Integración Económica, y Derecho a un Medio Ambiente Sano.</span></li>
-                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 group-hover:text-brand-400 transition-colors mt-1"></i><span>Community manager de la misión, visión y proyectos del banco verde.</span></li>
+                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 group-hover:text-slate-500 transition-colors mt-1"></i><span>Estudio de las Instituciones de Banca de Desarrollo y acercamiento administrativo.</span></li>
+                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 group-hover:text-slate-500 transition-colors mt-1"></i><span>Organización de conferencias: Nearshoring, Integración Económica, y Derecho a un Medio Ambiente Sano.</span></li>
+                                            <li class="flex items-start gap-2"><i class="fas fa-angle-right text-slate-400 group-hover:text-slate-500 transition-colors mt-1"></i><span>Community manager de la misión, visión y proyectos del banco verde.</span></li>
                                         </ul>
 
+                                        <!-- Etiquetas COLOR -->
                                         <div class="mt-4 flex flex-wrap gap-2 no-print">
                                             <span class="skill-tag text-xs font-semibold bg-emerald-50 border border-emerald-200 text-emerald-700 px-2.5 py-1 rounded-md shadow-sm hover:bg-emerald-100 transition-colors"><i class="fas fa-tag text-emerald-500 mr-1"></i> Finanzas Verdes</span>
                                             <span class="skill-tag text-xs font-semibold bg-emerald-50 border border-emerald-200 text-emerald-700 px-2.5 py-1 rounded-md shadow-sm hover:bg-emerald-100 transition-colors"><i class="fas fa-tag text-emerald-500 mr-1"></i> Relaciones Públicas</span>
@@ -265,34 +267,34 @@
                 </section>
 
                 <!-- Cursos y Diplomados -->
-                <section class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 hover:border-brand-400 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-300 print-break-inside-avoid opacity-0-init animate-fade-in-up delay-300">
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 hover:border-slate-400 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] transition-all duration-300 print-break-inside-avoid opacity-0-init animate-fade-in-up delay-300">
                     <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 border-b pb-3">
-                        <i class="fas fa-book-open text-brand-600 bg-brand-50 p-2 rounded-lg"></i> Cursos y Diplomados
+                        <i class="fas fa-book-open text-slate-700 bg-slate-100 p-2 rounded-lg"></i> Cursos y Diplomados
                     </h3>
                     
                     <ul class="space-y-4 text-sm md:text-base text-slate-700">
-                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-brand-500 hover:shadow-sm transition-all border border-transparent">
-                            <i class="fas fa-certificate text-brand-400 mt-1"></i> 
+                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-slate-500 hover:shadow-sm transition-all border border-transparent">
+                            <i class="fas fa-certificate text-slate-400 mt-1"></i> 
                             <span><strong class="font-semibold text-slate-800">Curso integral sobre las 40 recomendaciones del GAFI</strong> e introducción a la Metodología Evaluación- Actualización 5ta Ronda del GAFI (GAFILAT).</span>
                         </li>
-                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-brand-500 hover:shadow-sm transition-all border border-transparent">
-                            <i class="fas fa-certificate text-brand-400 mt-1"></i> 
+                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-slate-500 hover:shadow-sm transition-all border border-transparent">
+                            <i class="fas fa-certificate text-slate-400 mt-1"></i> 
                             <span><strong class="font-semibold text-slate-800">Activos Virtuales y Proveedores de Servicios de Activos Virtuales PSAV</strong> (GAFILAT).</span>
                         </li>
-                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-brand-500 hover:shadow-sm transition-all border border-transparent">
-                            <i class="fas fa-certificate text-brand-400 mt-1"></i> 
+                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-slate-500 hover:shadow-sm transition-all border border-transparent">
+                            <i class="fas fa-certificate text-slate-400 mt-1"></i> 
                             <span><strong class="font-semibold text-slate-800">Ley Fintech-Crowdfunding</strong> (Lawgic).</span>
                         </li>
-                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-brand-500 hover:shadow-sm transition-all border border-transparent">
-                            <i class="fas fa-certificate text-brand-400 mt-1"></i> 
+                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-slate-500 hover:shadow-sm transition-all border border-transparent">
+                            <i class="fas fa-certificate text-slate-400 mt-1"></i> 
                             <span><strong class="font-semibold text-slate-800">Seminario Internacional PLD/FT</strong> (CANACO).</span>
                         </li>
-                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-brand-500 hover:shadow-sm transition-all border border-transparent">
-                            <i class="fas fa-certificate text-brand-400 mt-1"></i> 
+                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-slate-500 hover:shadow-sm transition-all border border-transparent">
+                            <i class="fas fa-certificate text-slate-400 mt-1"></i> 
                             <span><strong class="font-semibold text-slate-800">Programa Jóvenes por las Finanzas Sostenibles</strong> en América Latina y el Caribe (FLACSO y GFLAC).</span>
                         </li>
-                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-brand-500 hover:shadow-sm transition-all border border-transparent">
-                            <i class="fas fa-certificate text-brand-400 mt-1"></i> 
+                        <li class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 hover:border-l-4 hover:border-slate-500 hover:shadow-sm transition-all border border-transparent">
+                            <i class="fas fa-certificate text-slate-400 mt-1"></i> 
                             <span><strong class="font-semibold text-slate-800">Protocolo de Estambul</strong> (PGJ).</span>
                         </li>
                     </ul>
@@ -304,81 +306,81 @@
             <div class="space-y-8 opacity-0-init animate-fade-in-up delay-300">
                 
                 <!-- Formación Académica -->
-                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-brand-400 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-300 print-break-inside-avoid">
+                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-slate-400 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] transition-all duration-300 print-break-inside-avoid">
                     <h3 class="text-xl font-bold text-slate-900 mb-5 flex items-center gap-3 border-b pb-2">
-                        <i class="fas fa-graduation-cap text-brand-600"></i> Formación Académica
+                        <i class="fas fa-graduation-cap text-slate-700"></i> Formación Académica
                     </h3>
                     
                     <div class="space-y-5">
                         <div class="group p-3 -mx-3 rounded-lg hover:bg-slate-50 transition-colors cursor-default">
-                            <h4 class="font-bold text-slate-800 group-hover:text-brand-600 transition-colors">Universidad Nacional Autónoma de México</h4>
+                            <h4 class="font-bold text-slate-800 group-hover:text-slate-900 transition-colors">Universidad Nacional Autónoma de México</h4>
                             <p class="text-slate-600">Derecho</p>
-                            <p class="text-sm text-brand-600 font-medium bg-brand-50 border border-brand-100 inline-block px-2 py-0.5 rounded mt-2">2021 - mayo 2025</p>
+                            <p class="text-sm text-slate-700 font-medium bg-slate-100 border border-slate-200 inline-block px-2 py-0.5 rounded mt-2">2021 - mayo 2025</p>
                         </div>
                         <div class="group p-3 -mx-3 rounded-lg hover:bg-slate-50 transition-colors cursor-default border-t border-slate-100">
-                            <h4 class="font-bold text-slate-800 group-hover:text-brand-600 transition-colors">Centro Universitario México, Marista</h4>
+                            <h4 class="font-bold text-slate-800 group-hover:text-slate-900 transition-colors">Centro Universitario México, Marista</h4>
                             <p class="text-slate-600">Preparatoria</p>
                         </div>
                     </div>
                 </section>
 
                 <!-- Idiomas -->
-                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-brand-400 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-300 print-break-inside-avoid">
+                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-slate-400 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] transition-all duration-300 print-break-inside-avoid">
                     <h3 class="text-xl font-bold text-slate-900 mb-5 flex items-center gap-3 border-b pb-2">
-                        <i class="fas fa-language text-brand-600"></i> Idiomas
+                        <i class="fas fa-language text-slate-700"></i> Idiomas
                     </h3>
                     
                     <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
                         <div class="group">
                             <div class="flex justify-between text-sm mb-1">
-                                <span class="font-medium text-slate-700 group-hover:text-brand-600 transition-colors">Español</span>
-                                <span class="text-brand-600 font-bold text-xs md:text-sm">Nativo</span>
+                                <span class="font-medium text-slate-700 group-hover:text-slate-900 transition-colors">Español</span>
+                                <span class="text-slate-700 font-bold text-xs md:text-sm">Nativo</span>
                             </div>
                             <div class="w-full bg-slate-100 rounded-full h-2 shadow-inner">
-                                <div class="bg-brand-600 h-2 rounded-full group-hover:shadow-[0_0_10px_rgba(37,99,235,0.6)] transition-all duration-500" style="width: 100%"></div>
+                                <div class="bg-slate-700 h-2 rounded-full group-hover:shadow-[0_0_10px_rgba(51,65,85,0.6)] transition-all duration-500" style="width: 100%"></div>
                             </div>
                         </div>
                         <div class="group">
                             <div class="flex justify-between text-sm mb-1">
-                                <span class="font-medium text-slate-700 group-hover:text-brand-500 transition-colors">Inglés</span>
-                                <span class="text-brand-500 font-bold text-xs md:text-sm">B1</span>
+                                <span class="font-medium text-slate-700 group-hover:text-slate-800 transition-colors">Inglés</span>
+                                <span class="text-slate-600 font-bold text-xs md:text-sm">B1</span>
                             </div>
                             <div class="w-full bg-slate-100 rounded-full h-2 shadow-inner">
-                                <div class="bg-brand-500 h-2 rounded-full group-hover:shadow-[0_0_10px_rgba(59,130,246,0.6)] transition-all duration-500" style="width: 60%"></div>
+                                <div class="bg-slate-500 h-2 rounded-full group-hover:shadow-[0_0_10px_rgba(100,116,139,0.6)] transition-all duration-500" style="width: 60%"></div>
                             </div>
                         </div>
                         <div class="group col-span-2 lg:col-span-1">
                             <div class="flex justify-between text-sm mb-1">
-                                <span class="font-medium text-slate-700 group-hover:text-brand-400 transition-colors">Francés</span>
-                                <span class="text-brand-400 font-bold text-xs md:text-sm">A2</span>
+                                <span class="font-medium text-slate-700 group-hover:text-slate-600 transition-colors">Francés</span>
+                                <span class="text-slate-500 font-bold text-xs md:text-sm">A2</span>
                             </div>
                             <div class="w-full bg-slate-100 rounded-full h-2 shadow-inner">
-                                <div class="bg-brand-400 h-2 rounded-full group-hover:shadow-[0_0_10px_rgba(96,165,250,0.6)] transition-all duration-500" style="width: 40%"></div>
+                                <div class="bg-slate-400 h-2 rounded-full group-hover:shadow-[0_0_10px_rgba(148,163,184,0.6)] transition-all duration-500" style="width: 40%"></div>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <!-- Publicaciones -->
-                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-brand-400 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-300 print-break-inside-avoid">
+                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-slate-400 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] transition-all duration-300 print-break-inside-avoid">
                     <h3 class="text-xl font-bold text-slate-900 mb-5 flex items-center gap-3 border-b pb-2">
-                        <i class="fas fa-pen-nib text-brand-600"></i> Publicaciones
+                        <i class="fas fa-pen-nib text-slate-700"></i> Publicaciones
                     </h3>
                     
                     <div class="space-y-4">
-                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 transition-all duration-300 hover:border-brand-300 hover:shadow-md hover:bg-white group">
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 transition-all duration-300 hover:border-slate-300 hover:shadow-md hover:bg-white group">
                             <p class="text-slate-700 leading-relaxed text-sm">
                                 Artículo titulado 
-                                <a href="https://animalpolitico.com/analisis/organizaciones/la-dignidad-en-nuestras-manos/memoria-violencia-juventudes-justicia-paz" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-600 group-hover:text-brand-700 underline decoration-brand-300 underline-offset-2 transition-colors">
+                                <a href="https://animalpolitico.com/analisis/organizaciones/la-dignidad-en-nuestras-manos/memoria-violencia-juventudes-justicia-paz" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-700 group-hover:text-slate-900 underline decoration-slate-300 underline-offset-2 transition-colors">
                                     "Construir memoria frente a la violencia que viven las juventudes" <i class="fas fa-external-link-alt text-xs ml-1"></i>
                                 </a> 
                                 en la revista Animal Político.
                             </p>
                         </div>
-                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 transition-all duration-300 hover:border-brand-300 hover:shadow-md hover:bg-white group">
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 transition-all duration-300 hover:border-slate-300 hover:shadow-md hover:bg-white group">
                             <p class="text-slate-700 leading-relaxed text-sm">
                                 Artículo titulado 
-                                <a href="https://www.revistaabogacia.com/seguimiento-de-transacciones-financieras-para-la-prevencion-de-la-trata-de-personas/" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-600 group-hover:text-brand-700 underline decoration-brand-300 underline-offset-2 transition-colors">
+                                <a href="https://www.revistaabogacia.com/seguimiento-de-transacciones-financieras-para-la-prevencion-de-la-trata-de-personas/" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-700 group-hover:text-slate-900 underline decoration-slate-300 underline-offset-2 transition-colors">
                                     "Seguimiento de transacciones financieras para la prevención de la trata de personas" <i class="fas fa-external-link-alt text-xs ml-1"></i>
                                 </a> 
                                 en la revista Abogacía.
@@ -388,27 +390,28 @@
                 </section>
 
                 <!-- Vinculación Profesional -->
-                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-brand-400 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] transition-all duration-300 print-break-inside-avoid">
+                <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-slate-400 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] transition-all duration-300 print-break-inside-avoid">
                     <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 border-b pb-2">
-                        <i class="fas fa-handshake text-brand-600"></i> Vinculación Profesional
+                        <i class="fas fa-handshake text-slate-700"></i> Vinculación Profesional
                     </h3>
                     
                     <div class="space-y-6">
                         <!-- Afiliaciones -->
                         <div class="group">
-                            <h4 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-3 group-hover:text-brand-700 transition-colors">Afiliaciones</h4>
+                            <h4 class="text-sm font-bold text-slate-600 uppercase tracking-wider mb-3 group-hover:text-slate-800 transition-colors">Afiliaciones</h4>
                             <ul class="space-y-2 text-sm md:text-base text-slate-700">
-                                <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-check text-brand-400 mt-1"></i> <span>Afiliada de Abogadas MX 4ta. Generación.</span></li>
-                                <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-check text-brand-400 mt-1"></i> <span>Miembro de la Barra Mexicana Colegio de Abogados.</span></li>
-                                <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-check text-brand-400 mt-1"></i> <span>Mentee en American Society of International Law (ASIL) Mentoring Program.</span></li>
+                                <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-check text-slate-400 mt-1"></i> <span>Afiliada de Abogadas MX 4ta. Generación.</span></li>
+                                <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-check text-slate-400 mt-1"></i> <span>Miembro de la Barra Mexicana Colegio de Abogados.</span></li>
+                                <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-check text-slate-400 mt-1"></i> <span>Mentee en American Society of International Law (ASIL) Mentoring Program.</span></li>
                             </ul>
                         </div>
 
                         <!-- Participación Académica -->
                         <div class="pt-4 border-t border-slate-100 group">
-                            <h4 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-3 group-hover:text-brand-700 transition-colors">Participación en Foros</h4>
+                            <h4 class="text-sm font-bold text-slate-600 uppercase tracking-wider mb-3 group-hover:text-slate-800 transition-colors">Participación en Foros</h4>
                             <ul class="space-y-3 text-sm md:text-base text-slate-700">
-                                <li class="flex items-start gap-2 p-2 rounded-lg hover:bg-amber-50 hover:border hover:border-amber-200 transition-all"><i class="fas fa-trophy text-amber-500 mt-1"></i> <span>Obtención del <span class="font-bold text-brand-600">segundo lugar entre 24 universidades</span> en la ronda oral final del "Concurso de Audiencias Temáticas ante la CIDH-OEA".</span></li>
+                                <!-- Trofeo y luces ámbar intactos -->
+                                <li class="flex items-start gap-2 p-2 rounded-lg hover:bg-amber-50 hover:border hover:border-amber-200 transition-all"><i class="fas fa-trophy text-amber-500 mt-1"></i> <span>Obtención del <span class="font-bold text-slate-800">segundo lugar entre 24 universidades</span> en la ronda oral final del "Concurso de Audiencias Temáticas ante la CIDH-OEA".</span></li>
                                 <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-gavel text-slate-400 mt-1"></i> <span>Moot Simulación de Audiencias Temáticas CIDH-OEA (2022 y 2023).</span></li>
                                 <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-gavel text-slate-400 mt-1"></i> <span>Círculo de análisis de sentencias de la Corte IDH (Observatorio SIDH-IIJ-UNAM).</span></li>
                                 <li class="flex items-start gap-2 hover:translate-x-1 transition-transform"><i class="fas fa-gavel text-slate-400 mt-1"></i> <span>"Escuela para Personas Jóvenes Defensoras de Derechos Humanos" (2023).</span></li>
@@ -427,12 +430,12 @@
             <div class="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">
                 
                 <!-- Tarjeta 1: Ética -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(79,70,229,0.2)] hover:-translate-y-2 hover:border-indigo-400 duration-300 group">
-                    <div class="bg-indigo-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(79,70,229,0.5)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-800 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(15,23,42,0.5)]">
                         <i class="fas fa-hand-holding-heart"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-indigo-700 transition-colors leading-tight">Compromiso Ético y Social</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Compromiso Ético y Social</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Estoy comprometida con ejercer mi profesión jurídica de manera ética, contribuyendo al bienestar social y promoviendo prácticas responsables en la defensa de los derechos y la resolución de conflictos.
                         </p>
@@ -440,12 +443,12 @@
                 </div>
 
                 <!-- Tarjeta 2: STEAM -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(79,70,229,0.2)] hover:-translate-y-2 hover:border-indigo-400 duration-300 group">
-                    <div class="bg-indigo-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(79,70,229,0.5)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-800 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(15,23,42,0.5)]">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-indigo-700 transition-colors leading-tight">Impulso a la Educación STEAM</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Impulso a la Educación STEAM</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Creo en el poder transformador de la educación en ciencia, tecnología, ingeniería, arte y matemáticas. Promuevo la participación de más jóvenes, especialmente mujeres, en estas áreas.
                         </p>
@@ -453,12 +456,12 @@
                 </div>
 
                 <!-- Tarjeta 3: Justicia con Perspectiva de Género -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(79,70,229,0.2)] hover:-translate-y-2 hover:border-indigo-400 duration-300 group">
-                    <div class="bg-indigo-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(79,70,229,0.5)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-800 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(15,23,42,0.5)]">
                         <i class="fas fa-scale-balanced"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-indigo-700 transition-colors leading-tight">Justicia con Perspectiva de Género</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Justicia con Perspectiva de Género</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Mantengo un compromiso integral con la protección de los derechos humanos, aplicando siempre una perspectiva de género para abordar y resolver desafíos complejos en el ámbito legal e institucional.
                         </p>
@@ -466,12 +469,12 @@
                 </div>
 
                 <!-- Tarjeta 4: Sostenibilidad y Finanzas Verdes -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(79,70,229,0.2)] hover:-translate-y-2 hover:border-indigo-400 duration-300 group">
-                    <div class="bg-indigo-600 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(79,70,229,0.5)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-800 text-white w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl shadow-md group-hover:scale-110 transition-transform group-hover:shadow-[0_0_15px_rgba(15,23,42,0.5)]">
                         <i class="fas fa-leaf"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-indigo-700 transition-colors leading-tight">Sostenibilidad y Finanzas Verdes</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Sostenibilidad y Finanzas Verdes</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Busco integrar soluciones jurídicas que impulsen la transparencia financiera y la responsabilidad ambiental, contribuyendo a los objetivos de sostenibilidad en los sectores público y privado.
                         </p>
@@ -488,12 +491,12 @@
             <div class="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">
                 
                 <!-- Tarjeta 1: Comunicación -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:-translate-y-2 hover:border-brand-400 duration-300 group">
-                    <div class="bg-brand-100 text-brand-600 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-brand-600 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(37,99,235,0.4)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-200 text-slate-700 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-slate-800 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(15,23,42,0.4)]">
                         <i class="fas fa-comment-dots"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-brand-700 transition-colors leading-tight">Comunicación Efectiva</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Comunicación Efectiva</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Tengo la habilidad de comunicar ideas complejas de forma clara y comprensible, facilitando la colaboración en equipos multidisciplinarios y la presentación de resultados técnicos ante distintas audiencias.
                         </p>
@@ -501,12 +504,12 @@
                 </div>
 
                 <!-- Tarjeta 2: Liderazgo -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:-translate-y-2 hover:border-brand-400 duration-300 group">
-                    <div class="bg-brand-100 text-brand-600 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-brand-600 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(37,99,235,0.4)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-200 text-slate-700 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-slate-800 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(15,23,42,0.4)]">
                         <i class="fas fa-user-friends"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-brand-700 transition-colors leading-tight">Liderazgo Colaborativo</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Liderazgo Colaborativo</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Me gusta guiar y motivar equipos de trabajo, promoviendo un ambiente de confianza, colaboración y crecimiento conjunto para alcanzar los objetivos organizacionales.
                         </p>
@@ -514,12 +517,12 @@
                 </div>
 
                 <!-- Tarjeta 3: Pensamiento Crítico -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:-translate-y-2 hover:border-brand-400 duration-300 group">
-                    <div class="bg-brand-100 text-brand-600 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-brand-600 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(37,99,235,0.4)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-200 text-slate-700 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-slate-800 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(15,23,42,0.4)]">
                         <i class="fas fa-brain"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-brand-700 transition-colors leading-tight">Pensamiento Crítico</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Pensamiento Crítico</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Analizo los problemas desde diferentes perspectivas, buscando siempre desarrollar soluciones innovadoras, efectivas y sustentadas en un razonamiento lógico y estratégico.
                         </p>
@@ -527,12 +530,12 @@
                 </div>
 
                 <!-- Tarjeta 4: Adaptabilidad -->
-                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:-translate-y-2 hover:border-brand-400 duration-300 group">
-                    <div class="bg-brand-100 text-brand-600 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-brand-600 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(37,99,235,0.4)]">
+                <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 md:gap-4 transition-all hover:shadow-[0_0_15px_rgba(100,116,139,0.2)] hover:-translate-y-2 hover:border-slate-500 duration-300 group">
+                    <div class="bg-slate-200 text-slate-700 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center shrink-0 text-lg md:text-xl group-hover:bg-slate-800 group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(15,23,42,0.4)]">
                         <i class="fas fa-sync-alt"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-brand-700 transition-colors leading-tight">Adaptabilidad</h4>
+                        <h4 class="font-bold text-slate-900 mb-1 md:mb-2 text-sm md:text-base group-hover:text-slate-900 transition-colors leading-tight">Adaptabilidad</h4>
                         <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                             Me adapto con facilidad a nuevas tecnologías, metodologías y entornos de trabajo, manteniendo un alto nivel de desempeño y aprendizaje continuo.
                         </p>
