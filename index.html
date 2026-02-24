@@ -82,42 +82,44 @@
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900 overflow-x-hidden">
 
     <!-- CABECERA CON FOTO -->
-    <header class="bg-brand-900 text-white py-12 px-6 lg:px-24 shadow-lg print-break-inside-avoid relative overflow-hidden">
+    <header class="bg-brand-900 text-white py-12 shadow-lg print-break-inside-avoid relative overflow-hidden">
         <!-- Detalle de fondo sutil para la cabecera -->
         <div class="absolute top-0 right-0 w-64 h-64 bg-brand-600 rounded-full opacity-10 blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-400 rounded-full opacity-5 blur-3xl -ml-20 -mb-20 pointer-events-none"></div>
 
-        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-6 opacity-0-init animate-fade-in-up relative z-10">
-            
-            <!-- DATOS -->
-            <div class="text-center md:text-left w-full">
-                <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-2">María Fernanda Cruz Muñoz</h1>
-                <h2 class="text-xl md:text-2xl text-blue-400 font-medium tracking-wide">Licenciada en Derecho</h2>
+        <div class="max-w-6xl mx-auto px-4 md:px-6 opacity-0-init animate-fade-in-up relative z-10">
+            <!-- Utilizamos el mismo Grid que el contenido principal para alinear la foto a la perfección -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 
-                <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3 mt-6 text-sm md:text-base text-slate-300">
-                    <a href="tel:+525543573166" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
-                        <i class="fas fa-phone text-brand-400"></i> +52 55 43573166
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fercruzm15@gmail.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
-                        <i class="fas fa-envelope text-brand-400"></i> fercruzm15@gmail.com
-                    </a>
-                    <a href="https://www.linkedin.com/in/mar%C3%ADa-fernanda-cruz-mu%C3%B1oz-3a2473292?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmyYe1gTjTn%2B3GR4IghBKCA%3D%3D" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
-                        <i class="fab fa-linkedin text-brand-400"></i> Linkedin
-                    </a>
+                <!-- DATOS (Columna principal, alineada con la sangría de las tarjetas de la izquierda usando md:pl-8) -->
+                <div class="lg:col-span-2 text-center lg:text-left order-2 lg:order-1 flex flex-col items-center lg:items-start md:pl-8">
+                    <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-2">María Fernanda Cruz Muñoz</h1>
+                    <h2 class="text-xl md:text-2xl text-blue-400 font-medium tracking-wide">Licenciada en Derecho</h2>
+                    
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-3 mt-6 text-sm md:text-base text-slate-300">
+                        <a href="tel:+525543573166" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
+                            <i class="fas fa-phone text-brand-400"></i> +52 55 43573166
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fercruzm15@gmail.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
+                            <i class="fas fa-envelope text-brand-400"></i> fercruzm15@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/mar%C3%ADa-fernanda-cruz-mu%C3%B1oz-3a2473292?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmyYe1gTjTn%2B3GR4IghBKCA%3D%3D" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white hover:scale-105 transition-all">
+                            <i class="fab fa-linkedin text-brand-400"></i> Linkedin
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- FOTO -->
-            <div class="shrink-0 relative group">
-                <!-- Se agrandó de w-40/h-40 a w-56/h-56 en pantallas medianas y grandes -->
-                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-slate-700 bg-slate-800 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.3)] flex items-center justify-center transition-all duration-500 group-hover:border-brand-500 group-hover:shadow-[0_0_25px_rgba(37,99,235,0.4)] group-hover:scale-105">
-                    <!-- Ajuste manual: object-[50%_15%] te permite decidir exactamente qué tan arriba o abajo se ve tu rostro -->
-                    <img src="MFCM.jpeg" alt="María Fernanda Cruz Muñoz" class="w-full h-full object-cover object-[50%_15%]">
+                <!-- FOTO (Columna secundaria, alineada con la sangría de las tarjetas de la derecha usando md:pl-6) -->
+                <div class="lg:col-span-1 flex justify-center lg:justify-start md:pl-6 order-1 lg:order-2">
+                    <div class="shrink-0 relative group">
+                        <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-slate-700 bg-slate-800 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.3)] flex items-center justify-center transition-all duration-500 group-hover:border-brand-500 group-hover:shadow-[0_0_25px_rgba(37,99,235,0.4)] group-hover:scale-105">
+                            <img src="Mafer2 2.jpg.jpeg" alt="María Fernanda Cruz Muñoz" class="w-full h-full object-cover object-[50%_15%]">
+                        </div>
+                        <div class="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-6 h-6 md:w-7 md:h-7 bg-green-500 border-4 border-brand-900 rounded-full no-print" title="Disponible"></div>
+                    </div>
                 </div>
-                <!-- Se ajustó la posición y tamaño del punto verde para el nuevo diámetro -->
-                <div class="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-6 h-6 md:w-7 md:h-7 bg-green-500 border-4 border-brand-900 rounded-full no-print" title="Disponible"></div>
-            </div>
 
+            </div>
         </div>
     </header>
 
