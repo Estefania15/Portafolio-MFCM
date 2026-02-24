@@ -90,7 +90,7 @@
         <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-6 opacity-0-init animate-fade-in-up relative z-10">
             
             <!-- DATOS -->
-                         <div class="text-center md:text-left w-full">
+            <div class="text-center md:text-left w-full">
                 <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-2">María Fernanda Cruz Muñoz</h1>
                 <h2 class="text-xl md:text-2xl text-blue-400 font-medium tracking-wide">Licenciada en Derecho</h2>
                 
@@ -111,7 +111,8 @@
             <div class="shrink-0 relative group">
                 <!-- Se agrandó de w-40/h-40 a w-56/h-56 en pantallas medianas y grandes -->
                 <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-slate-700 bg-slate-800 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.3)] flex items-center justify-center transition-all duration-500 group-hover:border-brand-500 group-hover:shadow-[0_0_25px_rgba(37,99,235,0.4)] group-hover:scale-105">
-                    <img src="Mafer2 2.jpg.jpeg" alt="María Fernanda Cruz Muñoz" class="w-full h-full object-cover">
+                    <!-- Ajuste manual: object-[50%_15%] te permite decidir exactamente qué tan arriba o abajo se ve tu rostro -->
+                    <img src="Mafer2 2.jpg.jpeg" alt="María Fernanda Cruz Muñoz" class="w-full h-full object-cover object-[50%_15%]">
                 </div>
                 <!-- Se ajustó la posición y tamaño del punto verde para el nuevo diámetro -->
                 <div class="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-6 h-6 md:w-7 md:h-7 bg-green-500 border-4 border-brand-900 rounded-full no-print" title="Disponible"></div>
@@ -119,6 +120,7 @@
 
         </div>
     </header>
+
     <!-- CONTENIDO PRINCIPAL -->
     <main class="max-w-6xl mx-auto px-4 md:px-6 py-10 space-y-8">
         
